@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Boxes</title>
+     <style>
+        body {
+            margin: 0;
+        }
+           ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              width: 25%;
+              background-color: #ddd;
+              height: 100%;
+              position: fixed;
+              overflow: auto;
+              
+           }
+           li a {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color:black;
+            font-size: 36px;
+        
+        
+           }
+           li:last-child {
+            border-bottom: none;
+           }
+           
+           a.active {
+            background-color: blue;
+            color: white;
+
+           }
+           li a:hover:not(.active) {
+            background-color: rgb(4, 4, 245);
+            color: #fff;
+            font-size: 30px;
+    
+           }
+           div {
+            margin-left: 25%;
+            padding: 1px 16px;
+            
+           }
+          
+
+           
+         </style>   
+    </head>
+<body>
+    <ul class="clearfix">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">OFFERS</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">LIVE NEED</a></li>
+        <li><a href="#">HELP</a></li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
+    <div >
+    <h1>Welcone to Paradice</h1>
+    
+</div>
+</body>
+</html>
