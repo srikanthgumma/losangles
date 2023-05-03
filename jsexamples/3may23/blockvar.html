@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        console.log("Accessing variables outside the program from block");
+        console.log("{");
+    for(var i=0;i<=1;i++){
+        var x=600;
+        let y=700;
+        const z=800;
+         console.log(x);
+         console.log(y);
+         console.log(z);
+    }
+    console.log("}");
+// console.log(y);
+console.log("accessing inside while block");
+var k=0;
+console.log("{");
+    while(k<=2){
+    console.log(k);
+    let y=700;
+    const z=800;
+    console.log(y);
+    console.log(x+" accessed from other block");
+    k++;
+     }
+console.log("}");
+console.log("accessing inside do while block");
+var j=0;
+console.log("{");
+    do{ 
+    console.log(j);
+    let y=700;
+    const z=800;
+    console.log(y);
+    console.log(z);
+    j++;
+     }while(j<=3)
+     console.log("}");
+// console.log(z);
+
+
+     console.log("unable to access let and const varibales from other blocks inside a block");
+     console.log("only variable declared by var keyword can be accessed in any other blocks...");
+
+
+    </script>
+</body>
+</html>
