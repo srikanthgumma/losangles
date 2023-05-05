@@ -12,23 +12,23 @@
     if(inpu!==0){
         var len =inpu.length;
         console.log("how many vowels are there in your name:"+" "+inpu);
-
+         var count=0;   
         for(var k=0;k<=len;k++){
             switch(inpu[k]){
                 case "o":
-                  console.log(1);
+                  count++
               break;
               case "a":
-                console.log(1);
+              count++;
                 break;
               case "e":
-                console.log(1);
+                count++;
                 break;
              case "i":
-               console.log(1);
+               count++;
                break;
              case "u":
-                console.log(1);
+                count++;
                 break;
                 default:
                     // console.log("");
@@ -39,6 +39,7 @@
   else {
         console.log("not a string");
     }
+    console.log("total vowels in your name: "+inpu+" is "+count);
   </script>
 </body>
 </html>
