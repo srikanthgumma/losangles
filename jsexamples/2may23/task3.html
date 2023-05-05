@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function op(x,y,z){
+            if(x!==0&&y!==0){
+            switch(z){
+                case '+':
+                console.log(x+y);
+              
+                break;
+                case '*':
+                console.log(x*y);
+                break;
+                case '/':
+                console.log(x/y);
+                break;
+                case '-':
+                console.log(x-y);
+                break;
+                case '%':
+                console.log(x%y);
+                break;
+                default:
+                console.log("you did not choose anything....");            
+        
+            }
+        }
+    }
+
+    var p=prompt("enter first number:");
+    var q=prompt("enter second number:");
+      var i=Number(p);
+      var j=Number(q);
+      console.log(typeof(i));
+
+     console.log("addtion of entered two numbers:");
+      op(i,j,'+');
+      console.log("subtraction of given two numbers:");
+
+      op(i,j,'-');
+      console.log("division of given two numbers:");
+
+      op(i,j,'/');
+      console.log("multiplication of given two numbers:");
+
+      op(i,j,'*');
+      console.log("Modules for given two numbers:");
+
+      op(i,j,'%');
+</script>
+</body>
+</html>
