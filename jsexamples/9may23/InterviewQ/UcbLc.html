@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=prompt("enter a name");
+console.log(a);
+var st=" ";
+ad(a);
+function ad(x){
+    for(var i=0;i<x.length;i++){
+       if(x[i] == x[i].toUpperCase() ){
+        st +=x[i].toLowerCase();
+       } else if(x[i] == x[i].toLowerCase()){
+        st +=x[i].toUpperCase();
+       }
+}
+console.log(st);
+}
+    </script>
+</body>
+</html>
