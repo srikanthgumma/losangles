@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var c=prompt("enter a string");
+var a =prompt("enter a character: ");
+
+var count=0;
+function co(x,y){
+    if(x.length==1){
+    for (var i=0;i<y.length;i++){
+    if(x[i]<=9){
+        alert("please, enter a sing;le character, not number");
+    } else{
+        if(x[0]==y[i]){
+            count++;
+        }
+    }
+    
+}
+    } else{
+        alert("please, enter a sing;le character, not number");
+    }
+}
+co(a,c);
+console.log(c);
+
+console.log("count of "+a+" in given string "+c+" is "+count);
+    </script>
+</body>
+</html>
