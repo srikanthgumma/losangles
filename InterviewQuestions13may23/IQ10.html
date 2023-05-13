@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("this is one way");
+        var arr=[9,8,7,6,5,4,9,8,7,6];
+        function show(arr){
+            var x="("+arr[0]+arr[1]+arr[2]+")"+" ";
+            var y= arr[3]+""+arr[4]+""+arr[5]+"-";
+            var z=arr[6]+""+arr[7]+""+arr[8]+""+arr[9];
+            console.log(x+y+z);
+        }
+        show(arr);
+        console.log(("this is second way"));
+        var nu="9505907430";
+        var q="("+nu.slice(0,3)+")"+" ";
+        var w=nu.slice(3,6)+"-"
+        var e=nu.slice(6);
+        console.log(q+w+e);
+    </script>
+</body>
+</html>

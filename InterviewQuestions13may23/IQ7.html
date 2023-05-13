@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=prompt("enter first number");
+        a=Number(a);
+        var b=prompt("enter second number: ");
+        b=Number(b);
+        function show(a,b){
+            if(a==10&&b==0){
+                alert("it is true");
+            }else if(b==10&&a==0){
+                alert("it is true.")
+            } 
+            else if(a+b==10){
+                alert("it is true.");
+            } else{
+                alert("this does not satisfy our conditions. please try again")
+            }
+        }
+        
+        show(a,b);
+        console.log("this is second way");
+        a==0&&b==10?console.log("true"):(a==10&&b==0?console.log("true"):(a+b==10?console.log("true"):console.log("false")));
+    </script>
+</body>
+</html>
