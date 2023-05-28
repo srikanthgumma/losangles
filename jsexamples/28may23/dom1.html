@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+
+
+
+<div style="border: 0px solid black; box-shadow: 0 0 1600px rgb(228, 229, 220),0 0 100px black; text-align: center; padding: 20px; border-radius: 10px; width: 450px; height: 350px; background-color: rgb(248, 237, 24); margin: auto; margin-top: 200px;" id="ig">
+    <div style="text-align: center;" id="insta">
+     <img src="images/sri.jpg" alt="image" width="150px" height="150px" style="border-radius: 50%;">
+     <h2>ACCESS MY PROJECTS </h2>
+    </div>
+     <div>
+         <form  style="text-align: center;">
+             <input type="text" id="numb" placeholder="enter your number" style="width: 100%; height: 40px; border-radius: 30px; font-size: 1.4rem; text-align: left; color: yellow; background-color: black; text-align: center;">
+             <input type="button" id="butt" value="SEND OTP" style=" border-radius: 8px; padding: 7px 18px ; background-color:rgb(10, 17, 24); font-weight: bold; color: white; margin-top: 20px; font-size: .8rem; " onclick="display()">
+         </form>
+     </div>
+     <P st><a href="#">New member?  Craete your account</a></P>
+ </div>
+ <script>
+               
+    
+    function display(){
+        let number1=document.getElementById("numb").value;
+    //   console.log(number1.length);
+        if(number1.length==10){
+            let mainparent=document.getElementById("bodyparent")
+            // let newchild=document.createElement("div");
+            let mainblock=document.getElementById("ig");
+            var a=Math.floor(Math.random()*10);
+var b=Math.floor(Math.random()*10);
+var c=Math.floor(Math.random()*10);
+var d=Math.floor(Math.random()*10);
+var total=a+""+b+ ""+c+""+d;
+let ver=prompt("enter the otp"+" OTP IS "+total)
+    if(ver==total){
+        confirm("success. let's jump into the projects");
+        // mainblock.innerHTML=window.location.href="../pages/allwebpage.html";
+        mainblock.innerHTML="<h1>MY PROJECTS</h1";
+            let p1=document.createElement("div");
+            p1.style.display="grid";
+            p1.style.justifyContent="center";
+            p1.style.gap="10px";
+    
+            mainblock.appendChild(p1);
+
+            let p2=document.createElement("a");
+            p2.innerHTML="Shop Webpage";
+            p2.style.border="1px solid white";
+            p2.style.backgroundColor="black";
+            p2.style.padding="10px";
+            p2.style.width="200px";
+            p2.style.fontSize="30px";
+            p2.style.color="white";
+            p1.appendChild(p2);
+
+            let p3=document.createElement("a");
+            p3.innerHTML="Gana Webpage";
+            p3.style.border="1px solid white";
+            p3.style.backgroundColor="black";
+            p2.style.width="200px";
+            p2.style.fontSize="30px";
+            p3.style.padding="10px";
+            p3.style.color="white";
+            p1.appendChild(p3);
+
+            let p4=document.createElement("a");
+            p4.innerHTML="js Webpage";
+            p4.style.border="1px solid white";
+            p4.style.backgroundColor="black";
+            p2.style.fontSize="30px";
+            p4.style.padding="10px";
+            p4.style.color="white";
+            p2.style.width="200px";
+            p1.appendChild(p4);
+
+            let p5=document.createElement("a");
+            p5.innerHTML="amazon Webpage";
+            p5.style.border="1px solid white";
+            p5.style.backgroundColor="black";
+            p5.style.padding="10px";
+            p5.style.color="white";
+            p2.style.fontSize="30px";
+            p2.style.width="200px";
+            p1.appendChild(p5);
+
+
+    } else {
+        alert("you entered wrong otp. please try again")
+    } 
+        } else {
+            alert("Please enter 10 digit number without characters");
+        }
+
+    }
+ </script>
+</body>
+</html>
