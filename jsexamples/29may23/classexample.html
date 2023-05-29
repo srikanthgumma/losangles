@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class phone{
+    constructor(a,b){
+        this.name=a;
+        this.price=b;
+    }
+    showp(){
+        return ("I have bought "+this.name+" mobile, the price was "+this.price );
+    }
+}
+ 
+class laptop extends phone{
+    constructor(a,b){
+        super(a,b);
+        this.connet="bluetooth";
+    }
+    lap(){
+        return (
+            this.showp()+ " and. we can connect my "+this.name +"  with my new laptop via "+this.connet
+        );
+    }
+}
+let dis=new laptop("RealME",15000);
+document.write(dis.lap());
+    </script>
+</body>
+</html>
