@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //
+        function show(a,b){
+    console.log(a);
+    let opp=a[0].marks;
+
+let y=0;
+for(i=0;i<b;i++){
+y+=opp[i];
+}
+let  r=y/b;
+let yyy=Object.entries(a[0]);
+yyy[1][0]="AvgMarks";
+yyy[1][1]=r.toFixed(0);
+const obj=Object.fromEntries(yyy)
+// console.log(obj);
+// a[0].AvgMarks= r.toFixed(0);
+let sas=[obj]
+return sas
+}
+const qa=[ {name:"sri", marks:[90,89,78]} ]
+let w=qa[0].marks.length;
+ console.log(show(qa,w));
+
+ 
+ //another way
+// function show(a,b){
+//    let op=Object.entries(a).flat();
+//   for(i=0;i<op.length;i++){
+//     if(op[i]== "marks"){
+//         op[i]="avgmarks"
+//     }
+//   }
+
+//    console.log(op);
+   
+//    let y=0;
+//    for(i=0;i<b;i++){
+//  y+=a.marks[i];
+//    }
+//    let avg=y/2;
+
+//    op.avgmarks=avg.toFixed(0);
+//     return op;
+// }
+// const list ={
+//     name:'sri',
+//     marks:[12,34,55,66,90]
+// }
+// let len=list.marks.length;
+// console.log(show(list,len));
+
+    </script>
+</body>
+</html>
