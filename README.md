@@ -1,2 +1,2 @@
-# losangles
-My first repository
+ProblemSovling
+My first repositrery
